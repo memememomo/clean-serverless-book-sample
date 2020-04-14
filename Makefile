@@ -25,7 +25,7 @@ sls-package:
 npm-install:
 	$(DOCKER) run sls npm install ${ARGS}
 
-deploy:
+deploy: go-build
 	$(DOCKER) run sls ./scripts/deploy.sh
 
 delete-stack:
