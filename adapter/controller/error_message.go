@@ -2,6 +2,7 @@ package controller
 
 import (
 	"fmt"
+
 	"gopkg.in/validator.v2"
 )
 
@@ -24,6 +25,7 @@ var displayNames = map[string]string{
 	"micropost_id": "マイクロポストID",
 	"email":        "メールアドレス",
 	"content":      "本文",
+	"name":         "名前",
 }
 
 // ConvertErrorsToMessage エラーメッセージに変換

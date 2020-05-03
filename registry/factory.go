@@ -5,6 +5,7 @@ import (
 	"clean-serverless-book-sample/domain"
 	"clean-serverless-book-sample/interactor"
 	"clean-serverless-book-sample/usecase"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 )
@@ -199,4 +200,10 @@ func (f *Factory) BuildDeleteMicropost() usecase.IDeleteMicropost {
 			f.BuildGetMicropostByID(),
 			f.BuildMicropostOperator())
 	}).(usecase.IDeleteMicropost)
+}
+
+func (f *Factory) BuildCreateHelloMessage() usecase.ICreateHelloMesessage {
+	return f.container("CreateHelloMessage", func() interface{} {
+		return interactor.NewCreateHelloMessage()
+	}).(usecase.ICreateHelloMesessage)
 }
