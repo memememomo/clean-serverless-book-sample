@@ -15,7 +15,7 @@ require (
 	github.com/memememomo/nomof v0.0.0-20190414135749-6e7e38e1baa0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.4.0
-	golang.org/x/sys v0.0.0-20200212091648-12a6c2dcc1e4 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 	gopkg.in/validator.v2 v2.0.0-20191107172027-c3144fdedc21
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
